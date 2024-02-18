@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: purple; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    color: rgb(172, 227, 233);
+}
+.header{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    z-index: 100;
+    background-color: lightcyan;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #9c3030;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color:#994c4c ;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px; 
+    transition: .3s;
+}
+.navbar a:hover{
+    color: aqua;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between ;
+    height: 100vh;
+    background: purple;
+    background-position: center;
+    background-size: cover;
+    /* display: flex; */
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+
+#home-content{
+    max-width: 600px;
+}
+
+#home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+#home-content p{
+    font-size: 20px;
+}
+
+#home-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+    color: aqua;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    /* animation: slidetop 1s ease forwards;
+    animation-duration: 2s;
+    box-shadow: 0 0 5px aqua; */
+
+}
+
+#home-icon a:hover{
+    background: aqua;
+    color: black;
+    box-shadow: 0 0 20px aqua;
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom:6rem ;
+}
+
+.about-text{
+ 
+}
+
+.about-text h2{
+    font-size: 60px;
+    font-size: 60px;
+}
+
+.about-text h2 span{
+    color: aqua;
+    
+}
+
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    color: rgb(66, 111, 150);
+    font-weight: 29px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+#more-button{
+
+    height: 50px;
+    width: 300px;
+
+}
+
+.services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height:1.4;
+    margin-bottom: 4rem;
+    background-color: rgb(117, 73, 18);
+}
+
+#container{
+    padding: 90px;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-title span {
+    color: aqua;
+}
+
+#service-list{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+#service-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-radius: 20px;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 1px 2px blue ;
+}
+
+#service-list div:hover{
+    transform: translate(-10px);
+    color: orange;
+    background-color: chartreuse;
+}
+
+
+#service-list div 1 {
+    font-size: 50px;
+    margin-bottom:30px;
+}
+#service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px; 
+}
+
+.skills{
+    background-color: purple;
+}
