@@ -2,12 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* background-color: purple; */
+     /* background-color: purple;  */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
-    color: rgb(172, 227, 233);
+    /* color: rgb(172, 227, 233); */
 }
 .header{
     /* position: fixed; */
@@ -192,7 +192,7 @@ body{
 }
 
 
-#service-list div 1 {
+#service-list div i {
     font-size: 50px;
     margin-bottom:30px;
 }
@@ -202,6 +202,47 @@ body{
     margin-bottom: 15px; 
 }
 
-.skills{
-    background-color: purple;
+.section1{
+display: flex;
+flex-wrap: wrap;
 }
+
+.container1{
+    width: 100%;
+    padding: 75px 120px;
+    margin-left: 120px;
+    justify-content: space-evenly;
+}
+
+#heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+#technical-bar {
+    width: 100%;
+    /* background-color: gray; */
+}
+  
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 20px;
+border-right: 10px;
+transition: background 0.5s, transform 0.5s;
+box-shadow: 1px 1px 1px 2px blue ;
+background-color: transparent;
+
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+
+}
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.javascript {width: 65%; background-color: #f44336;}
+.typescript {width: 35%; background-color: #808080;}
