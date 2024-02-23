@@ -2,72 +2,85 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-     /* background-color: purple;  */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
-    /* color: rgb(172, 227, 233); */
+    color: #fff;
+    background-color: purple;
 }
+
 .header{
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10px;
     background: transparent;
     display: flex;
-    /* justify-content: flex-end; */
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: lightcyan;
+    
 }
 .logo{
     position: relative;
     font-size: 25px;
-    color: #9c3030;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation:slideRight 1s ease forwards;
 }
 .navbar a{
     display: inline-block;
     font-size: 25px;
-    color:#994c4c ;
+    color:#fff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px; 
     transition: .3s;
+    opacity: 0;
+    animation:slideTop  .5s ease forwards;
 }
 .navbar a:hover{
-    color: aqua;
+    color:  aqua;
 }
+
+
+
 .home{
     position: relative;
     width: 100%;
     justify-content: space-between ;
     height: 100vh;
-    background: purple;
-    background-position: center;
-    background-size: cover;
-    /* display: flex; */
     align-items: center;
+    margin-top: 150px;
     padding: 70px 10% 0;
 }
 
 
 #home-content{
-    max-width: 600px;
+    width: 600px;
 }
 
 #home-content h3{
     font-size: 32px;
     font-weight: 700;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
 }
 
 #home-content h1{
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
+    opacity: 0;
+    animation: sliderightH1 1s ease forwards;
+    animation-delay: .7s;
+    
 }
 
 #home-content p{
@@ -87,17 +100,80 @@ body{
     color: aqua;
     text-decoration: none;
     margin: 30px 15px 30px 0;
-    /* animation: slidetop 1s ease forwards;
-    animation-duration: 2s;
-    box-shadow: 0 0 5px aqua; */
+    animation: slidetop 1s ease forwards;
+    animation-duration: 4s;
+    box-shadow: 0 0 5px aqua;
 
 }
 
 #home-icon a:hover{
     background: aqua;
-    color: black;
+    color:black;
     box-shadow: 0 0 20px aqua;
 }
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+}
+
+
+@keyframes slideTop{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+}
+
+
+@keyframes slidetop{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+}
+
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+}
+
+
+@keyframes sliderightH1{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+}
+
+
+
 
 
 .about{
@@ -110,7 +186,7 @@ body{
 }
 
 .about-text{
- 
+ font: 60px;
 }
 
 .about-text h2{
@@ -144,15 +220,21 @@ body{
 
 }
 
+
+
+
+
+
+
 .services{
     color: aliceblue;
     font-size: 20px;
     line-height:1.4;
     margin-bottom: 4rem;
-    background-color: rgb(117, 73, 18);
+    
 }
 
-#container{
+#services1{
     padding: 90px;
 }
 
@@ -191,7 +273,6 @@ body{
     background-color: chartreuse;
 }
 
-
 #service-list div i {
     font-size: 50px;
     margin-bottom:30px;
@@ -202,124 +283,118 @@ body{
     margin-bottom: 15px; 
 }
 
-.section1{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .skill-section{
 display: flex;
 flex-wrap: wrap;
+} */
+
+.my-skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 70px;
+    
+    
+
 }
 
-.container1{
-    width: 100%;
-    padding: 75px 120px;
-    margin-left: 120px;
-    justify-content: space-evenly;
+.my-skill span {
+    color: aqua;
 }
 
 #heading1{
-    text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
-#technical-bar {
+.skills{
     width: 100%;
-    /* background-color: gray; */
+    max-width: 600px;
+    padding: 0 20px;
+    display: relative;
+    flex-wrap: wrap;
 }
-  
-.skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    border-radius: 20px;
-border-right: 10px;
-transition: background 0.5s, transform 0.5s;
-box-shadow: 1px 1px 1px 2px blue ;
-background-color: transparent;
 
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-grid-gap: 40px;
+#bar{
+    font-size: 20px;
+    
+  }
 
+  #bar .skill-name{
+    display: inline-flex;
+  }
+
+.skill-name{
+    font-size: 15px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
 }
-.html {width: 90%; background-color: #04AA6D;}
-.css {width: 80%; background-color: #2196F3;}
-.javascript {width: 65%; background-color: #f44336;}
-.typescript {width: 35%; background-color: #808080;}
 
+.skill-bar{
+    height: 20px;
+    background-color: #282828;
+    border-radius: 3px;
+  
+}
 
+.skill-per{
+    height: 20px;
+    background-color: #d13639;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
 
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #773939;
+    border-radius: 4px;
+    font-size: 15px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
 
-body{
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  .container{
-    width: 50%;
-    margin: 0 auto;
-  }
-  @keyframes load{
-    from {
-      width: 0%
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -10px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    } to{
+        width: 100%;
     }
-  }
-  @-webkit-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-moz-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-o-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  
-  .bar{
-    background-color: #EEE;
-    padding: 2px;
-    border-radius: 15px;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #FFF;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  }
-  .bar::before{
-    content:  attr(data-skill);
-    background-color: #f3b0ff;
-    display: inline-block;
-    padding: 5px 0 5px 10px;
-    border-radius: inherit;
-    animation: load 2s 0s;
-    -webkit-animation: load 2s 0s;
-    -moz-animation: load 2s 0s;
-    -o-animation: load 2s 0s;
-  }
-  
-  .bar.front::before{
-    background-color: #ffcc33;
-  }
-  .bar.back::before{
-    background-color: #a6cfe3;
-  }
-  
-  .bar.learning::before{
-    width: calc(20% - 10px);
-  }
-  .bar.basic::before{
-    width: calc(40% - 10px);
-  }
-  .bar.intermediate::before{
-    width: calc(60% - 10px);
-  }
-  .bar.advanced::before{
-    width: calc(80% - 10px);
-  }
-  .bar.expert::before{
-    width: calc(100% - 10px);
-  }
-  
+}
